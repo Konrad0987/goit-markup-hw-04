@@ -19,6 +19,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/modern-normalize.min.css/"
     </head>
     <body>
         <header class="header-line">
@@ -49,13 +50,33 @@
                     </ul>
                 </nav>
                 <ul >
-                    <li class="contact-item">
+                    <li class="contact-item ">
+                        
+                        <svg
+                        class="icon-header-1"
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                      >
+                        <use href="images/icons.svg#icon-envelope"></use>
+                        
+                      </svg>
+                    
                         <a class="contact-link" href="mailto:info@devstudio.com"
                             >info@devstudio.com</a
                         >
                     </li>
 
                     <li class="contact-item">
+                        <svg
+                         class="icon-header-1"
+                         width="16"
+                          height="12"
+                           viewBox="0 0 16 12"
+                           >
+            
+                           <use href="images/icons.svg#icon-smartphone1"></use>
+                         </svg>
                         <a class="contact-link" href="tel:+48111111111"
                             >+48 111 111 111</a
                         >
@@ -95,8 +116,8 @@
             </section>
             <section >
                 <ul class="projects-list list">
-                    <li >
-                        <figure >
+                    <li class="item">
+                        <figure>
                             <img
                                 src="images/technocrack.jpg"
                                 alt="strona internetowa technocrack"
@@ -104,13 +125,13 @@
                                 height="294"
                                
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">Technocrack</h3>
                                 <p class="portfolio-type">Strona internetowa</p>
                             </figcaption>
                         </figure>
                     </li>
-                    <li >
+                    <li class="item">
                         <figure >
                             <img
                                 src="images/grafika-new-orlean.jpg"
@@ -118,7 +139,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption >
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">
                                     Grafika New Orlean vs Golden Star
                                 </h3>
@@ -126,7 +147,7 @@
                             </figcaption>
                         </figure class="projects-photo">
                     </li>
-                    <li >
+                    <li class="item">
                         <figure>
                             <img
                                 src="images/restauracja-seafood.jpg"
@@ -134,7 +155,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption >
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">
                                     Restauracja Seafood
                                 </h3>
@@ -142,7 +163,7 @@
                             </figcaption>
                         </figure >
                     </li>
-                    <li >
+                    <li class="item">
                         <figure>
                             <img
                                 src="images/projekt-prime.jpg"
@@ -150,13 +171,13 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">Projekt Prime</h3>
                                 <p class="portfolio-type">Marketing</p>
                             </figcaption >
                         </figure>
                     </li>
-                    <li >
+                    <li class="item">
                         <figure >
                             <img
                                 src="images/projekt-boxes.jpg"
@@ -164,13 +185,13 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">Projekt Boxes</h3>
                                 <p class="portfolio-type">Aplikacja</p>
                             </figcaption>
                         </figure>
                     </li>
-                    <li >
+                    <li class="item">
                         <figure >
                             
                             <img
@@ -179,7 +200,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">
                                     Inspiration has no Borders
                                 </h3>
@@ -187,7 +208,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li >
+                    <li class="item">
                         <figure >
                             <img
                                 src="images/magazyn-lm.jpg"
@@ -195,7 +216,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">
                                     Magazyn Limited Edition
                                 </h3>
@@ -203,7 +224,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li >
+                    <li class="item">
                         <figure>
                             <img
                                 src="images/projekt-lab.jpg"
@@ -211,13 +232,14 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
+                                
                                 <h3 class="portfolio-item">Projekt LAB</h3>
                                 <p class="portfolio-type">Marketing</p>
                             </figcaption>
                         </figure>
                     </li>
-                    <li >
+                    <li class="item">
                         <figure >
                             <img
                                 src="images/growing-business.jpg"
@@ -225,7 +247,7 @@
                                 width="370"
                                 height="294"
                             />
-                            <figcaption>
+                            <figcaption class="signature-center-2">
                                 <h3 class="portfolio-item">Growing Business</h3>
                                 <p class="portfolio-type">Aplikacja</p>
                             </figcaption>
@@ -235,35 +257,64 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container">
-                <a
-                    class="link-logo-bottom"
-                    href="https://github.com/Konrad0987/goit-markup-hw-01/"
-                >
-                    <span class="web">Web</span>Studio</a
-                >
+            <div class="container footer-3">
+                <div>
+                    <a
+                        class="link-logo-bottom"
+                        href="https://github.com/Konrad0987/goit-markup-hw-01/"
+                    >
+                        <span class="web">Web</span>Studio</a
+                    >
 
-                <address>
-                    <ul class="addres-list list">
-                        <li>
-                            <p class="footer-adres">
-                                m. Warszawa, Aleje Jerozolimskie 21
-                            </p>
-                        </li>
-                        <li>
-                            <a
-                                class="footer-contact underline"
-                                href="mailto:info@devstudio.com"
-                                >info@example.com</a
-                            >
-                        </li>
-                        <li>
-                            <a class="footer-contact" href="tel:+48111111111"
-                                >+4811111111</a
-                            >
-                        </li>
-                    </ul>
-                </address>
+                    <address>
+                        <ul class="addres-list list">
+                            <li>
+                                <p class="footer-adres">
+                                    m. Warszawa, Aleje Jerozolimskie 21
+                                </p>
+                            </li>
+                            <li>
+                                <a
+                                    class="footer-contact underline"
+                                    href="mailto:info@devstudio.com"
+                                    >info@example.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer-contact"
+                                    href="tel:+48111111111"
+                                    >+4811111111</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="footer-2">
+                    <h3 class="footer-to-us">DOŁĄCZ DO NAS</h3>
+
+                    <a href="#" class="logo-media-2">
+                        <svg width="44" height="44" class="logo-media-1">
+                            <use href="images/icons.svg#icon-Ellipse"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="logo-media-2">
+                        <svg width="44" height="44" class="logo-media-1">
+                            <use href="images/icons.svg#icon-Ellipse11"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="logo-media-2">
+                        <svg width="44" height="44" class="logo-media-1">
+                            <use href="images/icons.svg#icon-Ellipse21"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="logo-media-2">
+                        <svg width="44" height="44" class="logo-media-1">
+                            <use href="images/icons.svg#icon-Ellipse3"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </footer>
     </body>

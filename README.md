@@ -1,1 +1,1 @@
-https://konrad0987.github.io/goit-markup-hw-04/
+git https://konrad0987.github.io/goit-markup-hw-04/
