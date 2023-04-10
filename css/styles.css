@@ -119,10 +119,14 @@ body {
 .motto {
     max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--brand-color-fifth);
     background-image: linear-gradient(#2f303a66, #2f303a66),
         url(../images/img.jpg);
     background-position: 0px -130px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     display: flex;
     justify-content: center;
