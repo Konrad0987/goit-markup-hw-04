@@ -24,7 +24,7 @@ body {
     display: flex;
 }
 
-.header3 {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,22 +39,41 @@ body {
     display: inline;
 }
 
+.contact-list {
+    display: flex;
+    align-items: center;
+}
+
 .contact-item {
     display: inline;
     margin-right: 50px;
 }
-.icon-header-1 {
-    fill: var(--brand-color-third);
-    cursor: pointer;
-    margin-right: 10px;
+.contact-item:last-child {
+    margin-right: 0;
 }
-
-.icon-header-1:focus,
-.icon-header-1:hover {
+.contact-link {
+    color: var(--brand-color-third);
+    fill: var(--brand-color-third);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
+    color: var(--brand-color-first);
     fill: var(--brand-color-first);
 }
-.contact-item:last-child {
-    margin-right: 50px;
+.contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.icon-header-1 {
+    margin-right: 10px;
 }
 
 .header {
@@ -97,18 +116,7 @@ body {
 .navigation-link:focus {
     color: var(--brand-color-first);
 }
-.contact-link {
-    color: var(--brand-color-third);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-}
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--brand-color-first);
-}
+
 .icona-link {
     color: var(--brand-color-third);
 }
@@ -117,14 +125,12 @@ body {
 }
 
 .motto {
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--brand-color-fifth);
     background-image: linear-gradient(#2f303a66, #2f303a66),
         url(../images/img.jpg);
-    background-position: 0px -130px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -132,11 +138,19 @@ body {
     justify-content: center;
     align-items: center;
 }
-.motto-content {
+/* .motto-content {
     text-align: center;
     max-width: 700px;
     padding-bottom: 200px;
     padding-top: 200px;
+} */
+.motto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1600px;
 }
 
 .motto-text {
@@ -146,7 +160,12 @@ body {
     line-height: 1.37;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+
+    text-align: center;
+    max-width: 700px;
+
+    padding-top: 200px;
 }
 
 .button {
@@ -168,11 +187,23 @@ body {
 .section {
     margin-bottom: 94px;
 }
+.section1 {
+    margin-bottom: 200px;
+}
 
 .lorem-list {
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+.icon-strengths {
+    background-color: var(--brand-color-sixth);
+    border-radius: 4%;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .our-strengths-name {
@@ -263,19 +294,15 @@ body {
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+    fill: var(--brand-color-eight);
 }
+
 .social-link:hover,
 .social-link:focus {
+    fill: var(--brand-color-fourth);
     background-color: var(--brand-color-first);
 }
 
-.icon {
-    fill: var(--brand-color-third);
-}
-.icon:hover,
-.icon:focus {
-    fill: #fff;
-}
 .contact-address {
     color: var(--brand-color-fourth);
     font-style: normal;
@@ -416,8 +443,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     padding: 20px 24px 4px 24px;
-    /* border-left: 1px solid #eee; */
-    /* border-right: 1px solid #eee; */
 }
 .portfolio-type {
     color: var(--brand-color-third);
