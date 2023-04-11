@@ -24,7 +24,7 @@
     </head>
     <body>
         <header class="header-line">
-            <div class="container header3">
+            <div class="container header">
                 <nav class="navigation">
                     <a
                         class="menu-link"
@@ -49,32 +49,34 @@
                         </li>
                     </ul>
                 </nav>
-                <ul>
+                <ul class="contact-list">
                     <li class="contact-item">
-                        <svg
-                            class="icon-header-1"
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                        >
-                            <use href="images/icons.svg#icon-envelope"></use>
-                        </svg>
-
-                        <a class="contact-link" href="mailto:info@devstudio.com"
-                            >info@devstudio.com</a
-                        >
+                        <a href="mailto:info@devstudio.com" class="contact-link"
+                            ><svg
+                                class="icon-header-1"
+                                width="16"
+                                height="12"
+                                viewBox="0 0 16 12"
+                            >
+                                <use
+                                    href="images/icons.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
 
                     <li class="contact-item">
-                        <svg
-                            class="icon-header-1"
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                        >
-                            <use href="images/icons.svg#icon-smartphone1"></use>
-                        </svg>
-                        <a class="contact-link" href="tel:+48111111111"
+                        <a class="contact-link" href="tel:+48111111111">
+                            <svg
+                                class="icon-header-1"
+                                width="16"
+                                height="12"
+                                viewBox="0 0 16 12"
+                            >
+                                <use
+                                    href="images/icons.svg#icon-smartphone1"
+                                ></use></svg
                             >+48 111 111 111</a
                         >
                     </li>
@@ -83,19 +85,25 @@
         </header>
         <main>
             <section class="motto section">
-                <div class="motto-content">
+                <div class="motto-container">
                     <h1 class="motto-text">
                         EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
                     </h1>
-                    <button class="button" type="button">Zamów usługę</button>
+                    <button class="button section1" type="button">
+                        Zamów usługę
+                    </button>
                 </div>
             </section>
             <section class="container">
                 <ul class="lorem-list list">
                     <li class="description">
-                        <svg width="270" height="120" viewBox="0 0 270 120">
-                            <use href="./images/icons.svg#icon-Antenna"></use>
-                        </svg>
+                        <div class="icon-strengths">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <use
+                                    href="./images/icons.svg#icon-antenna-1"
+                                ></use>
+                            </svg>
+                        </div>
                         <h3 class="our-strengths-name">LOREM IPSUM</h3>
                         <p class="our-strengths-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -104,9 +112,11 @@
                         </p>
                     </li>
                     <li>
-                        <svg width="270" height="120" viewBox="0 0 270 120">
-                            <use href="images/icons.svg#icon-clock-1"></use>
-                        </svg>
+                        <div class="icon-strengths">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <use href="images/icons.svg#icon-clock-1"></use>
+                            </svg>
+                        </div>
                         <h3 class="our-strengths-name">LOREM IPSUM</h3>
                         <p class="our-strengths-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -115,9 +125,13 @@
                         </p>
                     </li>
                     <li>
-                        <svg width="270" height="120" viewBox="0 0 270 120">
-                            <use href="images/icons.svg#icon-diagram-1"></use>
-                        </svg>
+                        <div class="icon-strengths">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <use
+                                    href="images/icons.svg#icon-diagram-1"
+                                ></use>
+                            </svg>
+                        </div>
                         <h3 class="our-strengths-name">LOREM IPSUM</h3>
                         <p class="our-strengths-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -126,9 +140,13 @@
                         </p>
                     </li>
                     <li>
-                        <svg width="270" height="120" viewBox="0 0 270 120">
-                            <use href="images/icons.svg#icon-Astro"></use>
-                        </svg>
+                        <div class="icon-strengths">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <use
+                                    href="images/icons.svg#icon-astronaut-1"
+                                ></use>
+                            </svg>
+                        </div>
                         <h3 class="our-strengths-name">LOREM IPSUM</h3>
                         <p class="our-strengths-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -183,11 +201,7 @@
                                 <p class="our-job">Product Designer</p>
                                 <div class="social-links">
                                     <a href="#" class="social-link">
-                                        <svg
-                                            width="20"
-                                            height="20"
-                                            class="icon"
-                                        >
+                                        <svg width="20" height="20">
                                             <use
                                                 href="images/icons.svg#icon-instagram-2"
                                             ></use>
