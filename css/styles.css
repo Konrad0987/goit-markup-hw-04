@@ -129,8 +129,6 @@ body {
     height: 600px;
     margin: 0 auto;
 
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     background-color: var(--brand-color-fifth);
     background-image: linear-gradient(#2f303a66, #2f303a66),
         url(../images/img.jpg);
@@ -142,12 +140,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* .motto-content {
-    text-align: center;
-    max-width: 700px;
-    padding-bottom: 200px;
-    padding-top: 200px;
-} */
+
 .motto-container {
     display: flex;
     flex-direction: column;
